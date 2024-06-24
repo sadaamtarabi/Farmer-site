@@ -1,2 +1,2 @@
 # Farmer-site
-farmer website project using HTML,CSS,and JavaScript.
+This is the fronend project which is based farmer website. this procject contains HTML for structure, CSS for styling, and JS for fuctionality.
