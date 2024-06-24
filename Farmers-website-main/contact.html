@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Inter:wght@100;200;300;400;500;531;600;700;800;900&family=Lobster&family=Montserrat:wght@1,500;600;700&family=Oxygen:wght@300;400;700&family=Raleway:ital,wght@0,100;0,500;1,400;1,500&family=Roboto:ital,wght@0,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+
+<style>
+
+
+  .contact-section .card {
+  width: 340px;
+  height: 400px;
+  margin-bottom: 2rem;
+  }
+  .contact-section .card .card-body .card-title {
+    font-size: 2.4rem;
+    font-family: 'Raleway', sans-serif;
+    color: #4d4d4d;
+    font-size: 26px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: initial;
+    position: relative;
+  }
+  .contact-section .card .card-body form label{
+    font-size: .9rem!important;
+    font-family: 'Raleway', sans-serif;
+    color: #4d4d4d;
+    font-weight: 500;
+    text-align: center;
+    text-transform: initial;
+    position: relative;
+}
+  .contact-section .card .card-body form input, textarea {
+    width: 280px;
+    background-color: #f2f2ff2!important;
+  }
+  .card-button .submit-btn {
+    color: white;
+    background: green;
+    
+  }
+  .opening-hours h3 {
+    font-size: 2rem!important;
+    font-family: 'Raleway', sans-serif;
+    color: #4d4d4d;
+    font-weight: 500;
+    text-transform: initial;
+    position: relative;
+  }
+  .opening-hours h6 {
+    font-size: 1.2rem!important;
+    font-family: 'Raleway', sans-serif;
+    color: #4d4d4d;
+    font-weight: 500;
+    text-transform: initial;
+    position: relative;
+  }
+
+.page-footer .footer-socials {
+  background-color: #004d4d;
+}
+.page-footer .footer-copyright {
+  background-color: #003333;
+}
+
+@media (max-width: 576px) {
+  .clients-title {
+   font-size: 20px;
+  }
+  .contact-section .card {
+  width: 320px;
+  height: 390px;
+  position: relative;
+  }
+  .contact-section .card .card-body form input, textarea {
+    width: 210px;
+    background-color: #f2f2ff2 !important;
+}
+.opening-hours h3 {
+    font-size: 1.2rem!important;
+    font-family: 'Raleway', sans-serif;
+    color: #4d4d4d;
+    font-weight: 500;
+    text-transform: initial;
+    text-align: center;
+  }
+  hr {
+    width: 100px;
+    text-align :start;
+  }
+  .opening-hours h6 {
+    font-size: .9rem!important;
+    font-family: 'Raleway', sans-serif;
+    color: #4d4d4d;
+    font-weight: 500;
+    text-align: center;
+  }
+}
+  .footer {
+  background-color:black;
+  
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: 1.5fr repeat(3, 1fr);
+  gap: 2rem;
+  color: white;
+}
+
+.footer__col h5 a {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
+
+.footer__col p {
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.footer__socials a {
+  padding: 5px 10px;
+  font-size: 1.25rem;
+  /* color: var(--primary-color); */
+  background-color: var(--secondary-color-light);
+  border-radius: 100%;
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+}
+
+.footer__socials a:hover {
+  color: white;
+  background-color: var(--primary-color);
+}
+
+.footer__col h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.footer__links a {
+  margin-bottom: 1rem;
+  display: flex;
+  color: white;
+  transition: 0.3s;
+}
+
+.footer__links a:hover {
+  color: blue;
+}
+
+.footer__bar {
+  padding: 1rem;
+  font-size: 0.8rem;
+  text-align: center;
+  color: white;
+}
+</style>
+</head>
+<body>
+       <div class="container">
+    <h1 class="h1-responsive clients-title text-center shadow-sm py-2">Talk to us</h1>
+
+    <div class="contact-section">
+        <div class="row">
+
+            <div class="col-sm-6">
+                <div class="card align-items-center" >
+                    <div class="card-body py-2">
+                        <div class="card-title py-2">
+                            <h4 class="h4-responsive">How can we help?</h4>
+                        </div>
+                         <form class="comment-form py-2" action="">
+                      <div class="form-group py-2">
+                          <label for="name"><span class="sr-only">Name</span></label>
+                          <input type="text" placeholder="Name" id="name" required>
+                      </div>
+                      <div class="form-group py-2">
+                          <label for="email"><span class="sr-only">Email:</span></label>
+                          <input type="email" placeholder="Email" id="email" required>
+                      </div>
+                      <div class="form-group py-2">
+                          <label for="text-area"><span class="sr-only">Query or suggestion</span></label>
+                         <textarea name="textarea" placeholder="Talk to us here..." id="textarea" cols="23" rows="3" required></textarea>
+                      </div>
+                      <div class="card-button">
+                         <button type="submit" class="btn btn-lg submit-btn">Submit</button>
+                      </div>
+                     
+                  </form>
+                    </div>
+        
+                </div>
+                <!-- /card -->
+            </div>
+        
+                <div class="col-sm-6 opening-hours">
+                  <div class="container">
+
+                    <h3 class="h3-responsive py-2 mx-2">Opening Hours</h3>
+                    <hr>
+                    <div class="content py-2 mx-2">
+                  <h6 class="h6-responsive"><span><i class="fa fa-clock-o" aria-hidden="true"></i> </span> Monday-Friday: 08:00-16:00</h6>
+                  <h6 class="h6-responsive"><span><i class="fa fa-clock-o" aria-hidden="true"></i> </span> Weekends: 09:00-13:00</h6>
+                  <h6 class="h6-responsive"><span><i class="fa fa-clock-o" aria-hidden="true"></i> </span> Public Holidays: 10:00-16:00</h6>
+                    </div>
+
+                    <div class="socials py-2 mx-2">
+                      <h3 class="h3-responsive">Get in touch with us</h3>
+                      <hr>
+                      <h6 class="h6-responsive"><span> <i class="fa fa-envelope" aria-hidden="true"></i> </span>Tarabiagric@gmail.com</h6>
+                      <h6 class="h6-responsive"><span> <i class="fa fa-phone" aria-hidden="true"></i> </span>(075) 589 5157</h6>
+                      <h6 class="h6-responsive"><span> <i class="fa fa-home" aria-hidden="true"></i> </span>Kampala, nateete<br>plotbox,2000</h6>
+                    </div>
+
+                    <!-- Social icons -->
+   <div class="social py-3 text-center text-black" style="cursor: pointer;">
+      <i class="fa fa-facebook fa-2x mx-1" aria-hidden="true"></i>
+
+     <i class="fa fa-twitter fa-2x mx-1" aria-hidden="true"></i>
+
+    <i class="fa fa-instagram fa-2x mx-1" aria-hidden="true"></i>
+     <i class="fa fa-home fa-2x mx-1" aria-hidden="true"></i>
+
+
+  </div>
+
+                  </div>
+               <!-- /container -->
+                </div>
+   
+    </div>
+    <!-- /row -->
+  
+
+    </div>
+    <!-- /contact section -->
+    </div>
+    <!-- /container -->
+
+
+<div>
+
+</div>
+<div></div>
+  
+<section>
+    <div class="container">
+      <h1 class="h1-responsive clients-title text-center shadow-sm py-2">Our Clients</h1>
+      
+      <div class="clients-content">
+  
+      <div class="card-columns py-4">
+              <div class="card">
+                  <img class="img-fluid" src="images/carrgill.png" alt="">
+              </div>
+  
+              <div class="card">
+                  <img class="img-fluid" src="images/monsato.png" alt="">
+              </div>
+              <div class="card">
+                  <img class="img-fluid" src="images/pick n pay.png" alt="">
+              </div>
+          </div>
+          
+          <div class="card-columns py-4">
+              <div class="card">
+                  <img class="img-fluid" src="images/shoprite-logo.jpg" alt="">
+              </div>
+  
+              <div class="card">
+                  <img class="img-fluid" src="images/spar supermarket logo.png" alt="">
+              </div>
+              <div class="card">
+                  <img class="img-fluid" src="images/Example logo.png" alt="">
+              </div>
+          </div>
+      </div>
+      <!-- /team-content -->
+      
+        
+      
+      </div>
+      <!-- /container -->
+     
+    </section>
+    
+ 
+      <footer class="footer">
+        <div class="section__container footer__container">
+          <div class="footer__col">
+            <h5><a href="#">Tarabi Algiculture</a></h5>
+            <p>
+              The best farm, organic fruits, crops and etc. Your premier destination for an immersive exploration into the rich tapestry of traps throughout history.
+            </p>
+            <div class="footer__socials">
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+              <a href="#"><i class="ri-twitter-fill"></i></a>
+              <a href="#"><i class="ri-instagram-line"></i></a>
+              <a href="#"><i class="ri-linkedin-fill"></i></a>
+            </div>
+          </div>
+          <div class="footer__col">
+            <h4>Our services</h4>
+            <div class="footer__links">
+              <a href="index.html">Home</a>
+              <a href="store.html">Product</a>
+              <a href="Logform.html">Login</a>
+              <a href="registration.html">Registration</a>
+              <a href="contact.html">Contact</a>
+            </div>
+          </div>
+          <div class="footer__col">
+            <h4>Quick links</h4>
+            <div class="footer__links">
+              <a href="#">Blogs</a>
+              <a href="#">histories</a>
+            
+            </div>
+          </div>
+          <div class="footer__col">
+            <h4>Help</h4>
+            <div class="footer__links">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Support</a>
+              <a href="#">Terms & Condition</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bar">
+          Copyright © 2023 Tarabi Algiculture. All rights reserved.
+        </div>
+    
+      </footer>
+  
+    </section>
+  
+
+
+
+
+    
+
+   
+  
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js" integrity="sha512-YibiFIKqwi6sZFfPm5HNHQYemJwFbyyYHjrr3UT+VobMt/YBo1kBxgui5RWc4C3B4RJMYCdCAJkbXHt+irKfSA==" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+ 
+</body>
+</html>
